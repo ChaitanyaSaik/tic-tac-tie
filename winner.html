@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Winner</title>
+  <link rel="stylesheet" href="winner-style.css">
+</head>
+<body>
+  <div class="winner-container">
+    <h1>Congratulations!</h1>
+    <div class="winner-message">
+      <p id="winner-name">Player</p> <!-- Dynamic winner name will be injected here -->
+      <p id="congrats-message"></p> <!-- Dynamic congratulatory message -->
+    </div>
+    <a href="index.html" class="play-again-btn">Play Again</a>
+  </div>
+
+  <script>
+    // Retrieve the winner and player name from sessionStorage
+    const winner = sessionStorage.getItem('winner');
+    const playerName = sessionStorage.getItem('playerName');
+
+    // Display winner and congratulatory message
+    const winnerNameElement = document.getElementById('winner-name');
+    const congratsMessageElement = document.getElementById('congrats-message');
+
+    if (winner === 'Draw') {
+      winnerNameElement.textContent = "It's a Draw!";
+      congratsMessageElement.textContent = '';
+    } else {
+      winnerNameElement.textContent = winner === 'X' ? playerName : 'AI'; // Show player's name if they win
+      congratsMessageElement.textContent = 'You are the winner of the game!';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    flex-direction: column;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Increased title size */
+    color: #f0c674; /* Bright gold color for title */
+    text-shadow: 0 0 10px #f0c674, 0 0 20px #f0c674, 0 0 30px #f0c674; /* Glow effect */
+    margin-bottom: 30px;
+    font-family: 'Comic Sans MS', sans-serif; /* Fun font for title */
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: #ffd700; /* Golden color */
+    border: 3px solid #f0c674; /* Light gold border */
+    cursor: pointer;
+    color: #333; /* Dark text for contrast */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0 0 15px #ffd700; /* Golden glow effect */
+  }
+  
+  .square:hover {
+    background-color: #ffcc00; /* Slightly darker gold on hover */
+    transform: scale(1.1); /* Scale up on hover for effect */
+    box-shadow: 0 0 25px #ffcc00; /* Enhanced glow on hover */
+  }
+  
+  .reset-btn {
+    padding: 10px 20px;
+    background-color: #ffd700; /* Golden color */
+    color: #000; /* Dark text color for contrast */
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .reset-btn:hover {
+    background-color: #ffcc00; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .reset-btn:active {
+    background-color: #e6b800; /* Even darker gold when clicked */
+  }
+  
+  .player-info {
+    font-size: 1.2rem;
+    color: #f0c674; /* Bright golden color */
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  .player-info p {
+    margin: 15px;
+  }
+  label {
+    font-size: 1.5rem;                     /* Font size of the label */
+    color: #ffd700;                        /* Gold color for the text */
+    margin-right: 10px;                    /* Space between the label and input field */
+    font-weight: bold;                     /* Makes the label text bold */
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700; /* Glowing gold effect */
+    display: inline-block;                 /* Ensures the label is inline with the input field */
+    margin-bottom: 10px;                   /* Space below the label */
+  }
+  input {
+    padding: 10px 20px;                    /* Adds padding inside the input field */
+    font-size: 1.2rem;                     /* Sets the font size */
+    border: none;                          /* Removes the default border */
+    border-radius: 5px;                    /* Adds rounded corners to the input field */
+    background-color: #ffd700;             /* Gold background color */
+    color: #000;                           /* Black text color */
+    width: 250px;                          /* Sets the width of the input field */
+    text-align: center;                    /* Centers the text inside the input */
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Glowing gold effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  input:focus {
+    outline: none;                         /* Removes the focus outline */
+    box-shadow: 0 0 15px #ffd700, 0 0 30px #ffd700; /* Stronger glow on focus */
+    background-color: #ffcc00;             /* Lighter gold color when focused */
+  }
+  
+  input:hover {
+    background-color: #ffcc00;             /* Lighter gold background on hover */
+    transform: scale(1.05);                 /* Slightly enlarges the input field on hover */
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700; /* Enhanced glowing effect on hover */
+  }
+    

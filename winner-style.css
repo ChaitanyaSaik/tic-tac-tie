@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+    color: #fff;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .winner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px #fff, 0 0 30px #ffd700; /* Golden glow effect */
+    font-family: 'Comic Sans MS', sans-serif;
+  }
+  
+  .winner-message {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px #f0c674, 0 0 20px #f0c674;
+  }
+  
+  #winner-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffd700; /* Golden text */
+    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Golden glow effect */
+  }
+  
+  .play-again-btn {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    background-color: #ffd700; /* Gold background */
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700; /* Glow effect */
+  }
+  
+  .play-again-btn:hover {
+    background-color: #ffcc00; /* Lighter gold */
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ffd700, 0 0 50px #ffd700; /* Enhanced glow effect */
+  }
+  
+  .play-again-btn:active {
+    background-color: #e6b800; /* Darker gold */
+    box-shadow: 0 0 30px #ffd700, 0 0 60px #ffd700; /* Intense glow effect */
+  }
+  
